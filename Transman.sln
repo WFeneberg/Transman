@@ -2,6 +2,14 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Transman", "Transman\Transman.csproj", "{5021FEBE-72C2-45C9-9526-F48EBAEDBFA8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Transman.UnitTests", "Transman.UnitTests\Transman.UnitTests.csproj", "{5E966BE7-5396-4DE0-B28E-90A23B85EA0B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Transman.IntegrationTests", "Transman.IntegrationTests\Transman.IntegrationTests.csproj", "{8985E2EE-7293-4BFB-85DF-C2CB4FA902C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Transman.ArchitectureTests", "Transman.ArchitectureTests\Transman.ArchitectureTests.csproj", "{F5F21927-9B12-445F-9B77-E8AEBADCFB59}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Transman.Extensions.DependencyInjection", "Transman.Extensions.DependencyInjection\Transman.Extensions.DependencyInjection.csproj", "{0120208F-FCBB-4940-8750-5B79AAC94EDB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +20,21 @@ Global
 		{5021FEBE-72C2-45C9-9526-F48EBAEDBFA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5021FEBE-72C2-45C9-9526-F48EBAEDBFA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5021FEBE-72C2-45C9-9526-F48EBAEDBFA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E966BE7-5396-4DE0-B28E-90A23B85EA0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E966BE7-5396-4DE0-B28E-90A23B85EA0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E966BE7-5396-4DE0-B28E-90A23B85EA0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E966BE7-5396-4DE0-B28E-90A23B85EA0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8985E2EE-7293-4BFB-85DF-C2CB4FA902C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8985E2EE-7293-4BFB-85DF-C2CB4FA902C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8985E2EE-7293-4BFB-85DF-C2CB4FA902C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8985E2EE-7293-4BFB-85DF-C2CB4FA902C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5F21927-9B12-445F-9B77-E8AEBADCFB59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5F21927-9B12-445F-9B77-E8AEBADCFB59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5F21927-9B12-445F-9B77-E8AEBADCFB59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5F21927-9B12-445F-9B77-E8AEBADCFB59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0120208F-FCBB-4940-8750-5B79AAC94EDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0120208F-FCBB-4940-8750-5B79AAC94EDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0120208F-FCBB-4940-8750-5B79AAC94EDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0120208F-FCBB-4940-8750-5B79AAC94EDB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

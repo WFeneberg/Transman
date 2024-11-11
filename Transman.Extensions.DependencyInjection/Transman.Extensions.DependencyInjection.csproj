@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Reference Include="Avalonia.Controls">
+        <HintPath>..\..\..\.nuget\packages\avalonia\11.2.0-beta1\ref\net8.0\Avalonia.Controls.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Avalonia" Version="11.2.0" />
+      <PackageReference Include="Avalonia.Desktop" Version="11.2.0" />
+      <PackageReference Include="FluentAssertions" Version="6.12.2" />
+    </ItemGroup>
+
+</Project>
