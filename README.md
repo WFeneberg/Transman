@@ -1,10 +1,10 @@
-#Transman ist eine Logistik Demoanwendung
+# Transman ist eine Logistik Demoanwendung
 
 ![build status](https://github.com/WFeneberg/Transman/actions/workflows/main.yml/badge.svg)
 
 In ihr versuche ich den Domain Driven Design Ansatz umzusetzen. Von Anfang an wird auf Test Driven Design gesetzt um eine möglichst hohe Testabdeckung zu erreichen.
 
-##Techstack:
+## Techstack:
 
 .Net Framework 8 später 9
 Entity Framework Core 8/9
