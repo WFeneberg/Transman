@@ -1,4 +1,4 @@
-Transman ist eine Logitik Demoanwendung
+Transman ist eine Logistik Demoanwendung
 
 ![build status](https://github.com/WFeneberg/Transman/actions/workflows/main.yml/badge.svg)
 
