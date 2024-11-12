@@ -6,28 +6,28 @@ In ihr versuche ich den Domain Driven Design Ansatz umzusetzen. Von Anfang an wi
 
 ## Techstack:
 
-.Net Framework 8 später 9
-Entity Framework Core 8/9
+.Net Framework 8 später 9 </br>
+Entity Framework Core 8/9 </br>
 
-Evolutionary Architecture:
-https://github.com/evolutionary-architecture/evolutionary-architecture-by-example
+Evolutionary Architecture: </br>
+https://github.com/evolutionary-architecture/evolutionary-architecture-by-example </br>
 
-UI:
-Avalonia UI
-https://avaloniaui.net/
-Basiert auch auf SkiaSharp, ähnlich wie flutter
+UI: </br>
+Avalonia UI </br>
+https://avaloniaui.net/ </br>
+Basiert auch auf SkiaSharp, ähnlich wie flutter </br>
 
-SkiaSharp:
-https://github.com/mono/SkiaSharp
-C# Port von google: https://skia.org/
+SkiaSharp: </br>
+https://github.com/mono/SkiaSharp </br>
+C# Port von google: https://skia.org/ </br>
 
-Printing/Reporting:
-https://github.com/QuestPDF/QuestPDF
-basiert auch auf Skia
+Printing/Reporting: </br>
+https://github.com/QuestPDF/QuestPDF </br>
+basiert auch auf Skia </br>
 
-Datenbank:
-SQLite: Treiber build in .Net
-Postgresql: https://www.npgsql.org/
+Datenbank: </br>
+SQLite: Treiber build in .Net </br>
+Postgresql: https://www.npgsql.org/ </br>
 
 Internes Event Messaging System: https://github.com/jbogard/MediatR
 
@@ -41,15 +41,17 @@ Versuch sauber zu trennen (Slicing)
 
 ![image](https://github.com/user-attachments/assets/fd8659ea-02d6-4426-bf13-7f4b5b16e409)
 
-- Wissen EF Core verbessern (Code First Ansatz)
-- Test Driven Development mit hoher Coverage sowohl Unit, Integration als auch Architecture Tests
-- Avalonia UI Cross Plattform (Service orientiert (DI) wie bei ASP.Net Core)
-- Postgresql/SQlite
-
-- Möglichst offene Architektur, die sich weiterentwickeln kann. Von einem Monolithen zu einem Modolithen bis hin zu einer Microservice Architektur.
-  https://entwickler.de/software-architektur/microservices-oder-monolithen-beides
-- Nur OpenSource Komponenten
-
+- Wissen EF Core verbessern (Code First Ansatz) </br>
+- Test Driven Development mit hoher Coverage sowohl Unit, Integration als auch Architecture Tests </br>
+- Avalonia UI Cross Plattform (Service orientiert (DI) wie bei ASP.Net Core) </br>
+- Postgresql/SQlite</br> 
+</br>
+- Möglichst offene Architektur, die sich weiterentwickeln kann. Von einem Monolithen zu einem Modolithen bis hin zu einer Microservice Architektur. </br>
+  https://entwickler.de/software-architektur/microservices-oder-monolithen-beides </br>
+- Nur OpenSource Komponenten </br>
+</br>
+- Github Wissen verbessern, insbesonder Github Actions </br>
+</br>
 Mal schauen, wie weit ich komme :-) 
 
 
