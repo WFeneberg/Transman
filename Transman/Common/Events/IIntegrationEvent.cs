@@ -1,7 +1,7 @@
 using System;
 using MediatR;
 
-namespace Transman.Common.Events.Eventbus;
+namespace Transman.Common.Events;
 
 internal interface IIntegrationEvent : INotification
 {

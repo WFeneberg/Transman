@@ -1,7 +1,7 @@
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Transman.Common.Events.Eventbus.InMemory;
+namespace Transman.Common.Events.Eventbus;
 
 internal interface IEventBus
 {

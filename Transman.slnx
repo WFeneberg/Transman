@@ -1,6 +1,5 @@
 ﻿<Solution>
   <Project Path="Transman.ArchitectureTests\Transman.ArchitectureTests.csproj" Type="Classic C#" />
-  <Project Path="Transman.Extensions.DependencyInjection\Transman.Extensions.DependencyInjection.csproj" Type="Classic C#" />
   <Project Path="Transman.IntegrationTests\Transman.IntegrationTests.csproj" Type="Classic C#" />
   <Project Path="Transman.UnitTests\Transman.UnitTests.csproj" Type="Classic C#" />
   <Project Path="Transman\Transman.csproj" Type="Classic C#" />
