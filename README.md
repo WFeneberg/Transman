@@ -47,7 +47,8 @@ Versuch sauber zu trennen (Slicing)
 - Postgresql/SQlite
 
 - Möglichst offene Architektur, die sich weiterentwickeln kann. Von einem Monolithen zu einem Modolithen bis hin zu einer Microservice Architektur.
-  https://entwickler.de/software-architektur/microservices-oder-monolithen-beides einer Modolithen
+  https://entwickler.de/software-architektur/microservices-oder-monolithen-beides
+- Nur OpenSource Komponenten
 
 Mal schauen, wie weit ich komme :-) 
 
