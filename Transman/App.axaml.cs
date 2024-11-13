@@ -6,7 +6,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Transman.Common.Clock;
 using Transman.Common.Events.Eventbus;
 using Transman.Common.Services;
-using Transman.Data.Persons;
+using Transman.Persons;
+using Transman.Persons;
 using Transman.ViewModels;
 using Transman.Views;
 

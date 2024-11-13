@@ -1,5 +1,5 @@
 ﻿using System.Linq;
-using Transman.Data.Persons;
+using Transman.Persons;
 
 namespace Transman.ViewModels;
 

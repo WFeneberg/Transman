@@ -1,7 +1,8 @@
+using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Transman.Data.Persons;
+namespace Transman.Persons;
 
 public class Person
 {   

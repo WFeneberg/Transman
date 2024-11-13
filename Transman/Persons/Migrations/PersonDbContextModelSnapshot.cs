@@ -3,11 +3,11 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using Transman.Data.Persons;
+using Transman.Persons;
 
 #nullable disable
 
-namespace Transman.Data.Persons.Migrations
+namespace Transman.Persons.Migrations
 {
     [DbContext(typeof(PersonDbContext))]
     partial class PersonDbContextModelSnapshot : ModelSnapshot
@@ -17,7 +17,7 @@ namespace Transman.Data.Persons.Migrations
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "8.0.11");
 
-            modelBuilder.Entity("Transman.Data.Persons.Person", b =>
+            modelBuilder.Entity("Transman.Persons.Person", b =>
                 {
                     b.Property<long>("PersonId")
                         .ValueGeneratedOnAdd()

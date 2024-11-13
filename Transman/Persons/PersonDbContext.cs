@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 
-namespace Transman.Data.Persons;
+namespace Transman.Persons;
 
 public class PersonDbContext : DbContext
 {

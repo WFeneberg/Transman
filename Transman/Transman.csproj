@@ -16,7 +16,6 @@
         <Folder Include="Invoice\" />
         <Folder Include="Models\"/>
         <AvaloniaResource Include="Assets\**"/>
-        <Folder Include="Persons\" />
         <Folder Include="Supplier\" />
         <Folder Include="User\" />
         <Folder Include="Vehicle\" />
@@ -53,6 +52,8 @@
 
 
     <ItemGroup>
-      <ProjectReference Include="..\Transman.Data.Persons\Transman.Data.Persons.csproj" />
+      <None Update="Persons.db">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
     </ItemGroup>
 </Project>

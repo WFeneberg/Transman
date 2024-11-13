@@ -4,15 +4,15 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using Transman.Data.Persons;
+using Transman.Persons;
 
 #nullable disable
 
-namespace Transman.Data.Persons.Migrations
+namespace Transman.Persons.Migrations
 {
     [DbContext(typeof(PersonDbContext))]
-    [Migration("20241113205155_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20241113220944_Initial")]
+    partial class Initial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -20,7 +20,7 @@ namespace Transman.Data.Persons.Migrations
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "8.0.11");
 
-            modelBuilder.Entity("Transman.Data.Persons.Person", b =>
+            modelBuilder.Entity("Transman.Persons.Person", b =>
                 {
                     b.Property<long>("PersonId")
                         .ValueGeneratedOnAdd()
