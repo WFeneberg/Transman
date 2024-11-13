@@ -15,11 +15,11 @@ https://github.com/evolutionary-architecture/evolutionary-architecture-by-exampl
 UI: </br>
 Avalonia UI </br>
 https://avaloniaui.net/ </br>
-Basiert auch auf SkiaSharp, ähnlich wie flutter </br>
+Basiert auf SkiaSharp </br>
 
 SkiaSharp: </br>
 https://github.com/mono/SkiaSharp </br>
-C# Port von google: https://skia.org/ </br>
+C# Port von google skia: https://skia.org/ </br>
 
 Printing/Reporting: </br>
 https://github.com/QuestPDF/QuestPDF </br>
