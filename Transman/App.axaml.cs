@@ -6,6 +6,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Transman.Common.Clock;
 using Transman.Common.Events.Eventbus;
 using Transman.Common.Services;
+using Transman.Data.Persons;
 using Transman.ViewModels;
 using Transman.Views;
 
@@ -25,6 +26,7 @@ public partial class App : Application
         collection.AddCommonServices();
         collection.AddEventBus();
         collection.AddClock();
+        collection.AddDbContext<PersonDbContext>();
         
         // Creates a ServiceProvider containing services from the provided IServiceCollection
         Services = collection.BuildServiceProvider();
