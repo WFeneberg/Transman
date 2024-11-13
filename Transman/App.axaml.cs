@@ -1,7 +1,9 @@
+using System;
 using Avalonia;
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Markup.Xaml;
 using Microsoft.Extensions.DependencyInjection;
+using Transman.Common.Clock;
 using Transman.Common.Events.Eventbus;
 using Transman.Common.Services;
 using Transman.ViewModels;
@@ -22,9 +24,10 @@ public partial class App : Application
         var collection = new ServiceCollection();
         collection.AddCommonServices();
         collection.AddEventBus();
+        collection.AddClock();
         
         // Creates a ServiceProvider containing services from the provided IServiceCollection
-        var services = collection.BuildServiceProvider();
+        Services = collection.BuildServiceProvider();
         
         if (ApplicationLifetime is IClassicDesktopStyleApplicationLifetime desktop)
         {
@@ -36,4 +39,11 @@ public partial class App : Application
 
         base.OnFrameworkInitializationCompleted();
     }
+    
+    public new static App? Current => Application.Current as App;
+
+    /// <summary>
+    /// Gets the <see cref="IServiceProvider"/> instance to resolve application services.
+    /// </summary>
+    public IServiceProvider? Services { get; private set; }
 }
