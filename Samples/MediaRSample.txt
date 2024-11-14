@@ -1,0 +1,90 @@
+Setting Up MediatR:
+Before diving into implementation, ensure you have MediatR installed in your project via NuGet. This can be done using the Package Manager Console or NuGet Package Manager UI in Visual Studio.
+
+Install-Package MediatR
+
+Example Scenario:
+Consider a simple e-commerce application where we need to manage products. We'll implement CQRS to handle creating a new product (command) and retrieving a product by ID (query).
+
+Implementation Steps:
+
+    Define your commands and queries as plain C# classes, each implementing the appropriate marker interface.
+    Create handler classes that implement the corresponding interfaces for handling commands and queries.
+    Register MediatR in your application's dependency injection container (e.g., ASP.NET Core's IServiceCollection).
+    Send commands and queries through MediatR to invoke their respective handlers.
+
+
+
+// Command to create a new product
+public class CreateProductCommand : IRequest<int>
+{
+    public string Name { get; set; }
+    public decimal Price { get; set; }
+}
+
+// Query to get a product by ID
+public class GetProductByIdQuery : IRequest<Product>
+{
+    public int Id { get; set; }
+}
+
+// Command handler for creating a product
+public class CreateProductCommandHandler : IRequestHandler<CreateProductCommand, int>
+{
+    public Task<int> Handle(CreateProductCommand request, CancellationToken cancellationToken)
+    {
+        // Logic to create a new product and return its ID
+        int newProductId = /* Add logic to create a new product */;
+        return Task.FromResult(newProductId);
+    }
+}
+
+// Query handler for retrieving a product by ID
+public class GetProductByIdQueryHandler : IRequestHandler<GetProductByIdQuery, Product>
+{
+    public Task<Product> Handle(GetProductByIdQuery request, CancellationToken cancellationToken)
+    {
+        // Logic to retrieve a product by ID and return it
+        Product product = /* Add logic to retrieve a product by ID */;
+        return Task.FromResult(product);
+    }
+}
+
+// Define the Product class
+public class Product
+{
+    public int Id { get; set; }
+    public string Name { get; set; }
+    public decimal Price { get; set; }
+}
+
+
+using MediatR;
+using Microsoft.Extensions.DependencyInjection;
+
+public class Startup
+{
+    public void ConfigureServices(IServiceCollection services)
+    {
+        services.AddMediatR(typeof(Startup));
+        // Add other services and dependencies
+    }
+}
+
+var mediator = serviceProvider.GetRequiredService<IMediator>();
+
+// Sending a command
+int newItemId = await mediator.Send(new CreateItemCommand { Name = "New Item", Price = 19.99m });
+
+// Sending a query
+Item item = await mediator.Send(new GetItemByIdQuery { Id = 123 });
+
+
+
+Info:
+Benefits of CQRS with MediatR:
+
+    Separation of Concerns: CQRS promotes cleaner code by separating read and write operations into distinct components.
+    Scalability: With CQRS, it's easier to scale read and write operations independently, optimizing performance.
+    Testability: Handlers can be unit tested in isolation, leading to more robust test suites.
+    Flexibility: CQRS enables developers to apply different optimization strategies to read and write paths, enhancing flexibility.
