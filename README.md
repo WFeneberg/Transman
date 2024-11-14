@@ -2,7 +2,7 @@
 
 ![build status](https://github.com/WFeneberg/Transman/actions/workflows/main.yml/badge.svg)
 
-In ihr versuche ich den Domain Driven Design Ansatz umzusetzen. Von Anfang an wird auf Test Driven Design gesetzt um eine möglichst hohe Testabdeckung zu erreichen.
+In ihr versuche ich den Domain Driven Design Ansatz umzusetzen. Von Anfang an wird auf Test Driven Development gesetzt um eine möglichst hohe Testabdeckung zu erreichen.
 
 ## Techstack:
 
@@ -15,11 +15,11 @@ https://github.com/evolutionary-architecture/evolutionary-architecture-by-exampl
 UI: </br>
 Avalonia UI </br>
 https://avaloniaui.net/ </br>
-Basiert auch auf SkiaSharp, ähnlich wie flutter </br>
+Basiert auf SkiaSharp </br>
 
 SkiaSharp: </br>
 https://github.com/mono/SkiaSharp </br>
-C# Port von google: https://skia.org/ </br>
+C# Port von google skia: https://skia.org/ </br>
 
 Printing/Reporting: </br>
 https://github.com/QuestPDF/QuestPDF </br>
