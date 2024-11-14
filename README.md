@@ -31,6 +31,10 @@ Postgresql: https://www.npgsql.org/ </br>
 
 Internes Event Messaging System: https://github.com/jbogard/MediatR
 
+Weitere Nuget Pakete die verwendet werden:
+https://docs.fluentvalidation.net/en/latest/
+https://fluentassertions.com/
+
 ## Lernziele:
 
 - Hexagonale Architektur/Onion Architektur mit Domain Driven Design (DDD):
