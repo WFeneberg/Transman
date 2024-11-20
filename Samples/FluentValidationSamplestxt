@@ -1,0 +1,13 @@
+public class TestOrdersValidator : AbstractValidator<Request.TestOrders>
+{
+    public TestOrdersValidator()
+    {
+        RuleFor(x => x.IfsId).NotEmpty().WithMessage("xx in XML should not be empty");
+        RuleFor(x => x.IfsId).Matches("[0-9a-zA-Z]+-\\*|[0-9]-\\*|[0-9]").WithMessage("xxin XML should have the correct format");
+    }
+}
+
+Using:
+var validator = new TestOrdersValidator();
+var result = validator.Validate(orders);
+if (result.IsValid)
